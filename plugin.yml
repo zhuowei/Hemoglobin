@@ -1,0 +1,3 @@
+name: Hemoglobin
+main: net.zhuoweizhang.hemoglobin.HemoglobinPlugin
+version: 1.2
