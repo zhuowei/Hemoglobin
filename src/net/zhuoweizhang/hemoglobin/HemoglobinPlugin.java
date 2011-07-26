@@ -16,7 +16,7 @@ public class HemoglobinPlugin extends JavaPlugin {
 	public int bloodMultiplier = 1;
 
 	/** how many ticks pass before the blood item is removed */
-	public int bloodRemovalDelay = 300;
+	public int bloodRemovalDelay = 50;
 
 	public boolean bloodPickupToRemove = false;
 
@@ -32,7 +32,7 @@ public class HemoglobinPlugin extends JavaPlugin {
 			bloodMaterial = mat;
 		bloodMetadata = (short) config.getInt("metadata", 1337);
 		bloodMultiplier = config.getInt("multiplier", 1);
-		bloodRemovalDelay = config.getInt("delay", 300);
+		bloodRemovalDelay = config.getInt("delay", 50);
 		bloodPickupToRemove = config.getBoolean("pickuptoremove", false);
 		config.save();	
 		PluginManager pm = this.getServer().getPluginManager();
