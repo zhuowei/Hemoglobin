@@ -75,8 +75,8 @@
   </target>
 
   <target name="doc" depends="build">
-    <javadoc sourcepath="${src}" classpathref="master-path" destdir="${doc}" access="private" windowtitle="Chef Documentation">
-      <doctitle><![CDATA[<h1>Hemobglobin Documentation</h1>]]></doctitle>
+    <javadoc sourcepath="${src}" classpathref="master-path" destdir="${doc}" access="private" windowtitle="Hemoglobin Documentation">
+      <doctitle><![CDATA[<h1>Hemoglobin Documentation</h1>]]></doctitle>
       <link href="http://download.oracle.com/javase/6/docs/api/" />
       <link href="http://jd.bukkit.org/apidocs/" />
     </javadoc>

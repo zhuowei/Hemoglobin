@@ -36,7 +36,7 @@ public class HemoglobinEntityListener extends EntityListener {
 
 	private void setRemovalTimer(Entity item) {
 		BukkitScheduler scheduler = Bukkit.getServer().getScheduler();
-		scheduler.scheduleAsyncDelayedTask(plugin, new RemoveItemThread(item),
+		scheduler.scheduleSyncDelayedTask(plugin, new RemoveItemThread(item),
 			plugin.bloodRemovalDelay + (random.nextInt(plugin.bloodRemovalDelay / 2) - (plugin.bloodRemovalDelay / 4)));
 	}
 
