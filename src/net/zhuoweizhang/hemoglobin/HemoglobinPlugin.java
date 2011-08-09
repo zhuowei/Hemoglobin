@@ -41,6 +41,7 @@ public class HemoglobinPlugin extends JavaPlugin {
 	}
 
 	public void onDisable() {
+		getServer().getScheduler().cancelTasks(this);
 	}
 
 }
